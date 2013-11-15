@@ -1,0 +1,35 @@
+.move-jump-move {
+    -webkit-animation: move-jump 5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: move-jump 5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: move-jump 5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
+}
+
+
+@keyframes move-jump {
+    0% { 
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        transform: translateX(-100px);
+    }
+    40% { 
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    55%{
+        -webkit-transform: translateY(-50px);
+        -moz-transform: translateY(-50px);
+        transform: translateY(-50px);
+    }
+
+    60%{
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    100% { 
+        -webkit-transform: translateX(-100px);
+        -moz-transform: translateX(-100px);
+        transform: translateX(-100px);
+    } 
+}
