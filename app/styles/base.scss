@@ -11,7 +11,7 @@ body
 body
 {
   overflow-x: hidden;
-  background: #7392cb;
+  background: rgb(220,160,40);
 }
 
 h1
@@ -32,36 +32,62 @@ h1
   left: 0;
 }
 
+.page {
+top: 0px;
+width: 500px;
+background: white;
+padding: 10px 30px;
+border: 1px #eee solid;
+position: absolute;
+}
+
 /**
   * z-index ordering of the different layers, do this for your layers,
   * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
   */
-.stage1{
 
-  .clouds
-  {
-    z-index: 2;
-    width: 1500px;
-    background: url('../images/clouds.gif') repeat-x top left;
+  .sky{
+    width: 3000px;
     top: 0;
-  }
+    .clouds{
+      z-index: 2;
+      width: 1500px;
+      height: 250px;
+      position: absolute;
+      border: none;
+    }
+    .clouds{
+      background: url('../images/clouds.png') repeat-x top left;
+      left: 0;
+      width: 3000px;
+    }
+    .sun{
+      background: url('../images/sun.png') no-repeat top left;
+      left: 30%;
+      z-index: 2;
+      width: 1000px;
+      height: 280px;
+      position: fixed;
+      border: none;
+      top: 0;
 
+    }
+  }
 
   .back-ground{
     z-index: 400;
-    width: 1500px;
-    background: url('../images/back-ground.png') repeat-x bottom left;
-    bottom: 0;
-    height: 263px;
+    width: 3200px;
+    background: url('../images/second-ground.png') repeat-x bottom left;
+    bottom: 100px;
+    height: 363px;
   }
-
 
   .second-ground{
     z-index: 500;
-    width: 2000px;
-    background: url('../images/second-ground.png') repeat-x bottom left;
-    bottom: 0;
-    height: 119px;
+    width: 3000px;
+    background: url('../images/mid-ground.png') repeat-x bottom left;
+    bottom: 100px;
+    height: 250px;
   }
 
   .floor{
@@ -69,62 +95,22 @@ h1
     width: 2500px;
     background: url('../images/floor.png') repeat-x top left;
     bottom: 0;
-    height: 160px;
+    height: 250px;
   }
 
-  .bowser{
-      z-index: 650;
-      bottom: 10px;
-      right: 150px;
-      width: 2350px;
-      img{
-          float: right;
-      }
-  }
+  .robotin{
+    width: 3000px;
+    bottom: 400px;
+    z-index: 650;
 
-}
+    .robot1{
+      width: 1200px;
+      height: 450px;
+      position: absolute;
+      right: -100px;
+      border: none;
 
+      background: url('../images/robotin_1.png') no-repeat top left;
+    }
 
-.stage2{
-  left: 6000px;
-  background: red;
-
-  .clouds
-  {
-    z-index: 2;
-    width: 1500px;
-    background: url('../images/clouds2.png') repeat-x top left;
-    top: 0;
-  }
-
-
-  .back-ground{
-    z-index: 400;
-    width: 1500px;
-    background: url('../images/back-ground2.png') repeat-x bottom left;
-    bottom: 0;
-    height: 263px;
-  }
-
-
-  .second-ground{
-    z-index: 500;
-    width: 2000px;
-    background: url('../images/second-ground2.png') repeat-x bottom left;
-    bottom: 0;
-    height: 119px;
-  }
-
-  .floor{
-    z-index: 600;
-    width: 2500px;
-    background: url('../images/floor2.png') repeat-x top left;
-    bottom: 0;
-    height: 160px;
-  }
-
-  
-  &.bowser2{
-      left: 50px;
-  }
 }
