@@ -4,6 +4,18 @@
     animation: move-jump 5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955); 
 }
 
+.moving-sky {
+    -webkit-animation: sky-move 15s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: sky-move 15s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: sky-move 15s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955) 
+}
+
+.floating-island {
+    -webkit-animation: float-island 5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-animation: float-island 5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    animation: float-island 5s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955) 
+}
+
 
 @keyframes move-jump {
     0% { 
@@ -31,5 +43,23 @@
         -webkit-transform: translateX(-100px);
         -moz-transform: translateX(-100px);
         transform: translateX(-100px);
+    } 
+}
+
+@keyframes sky-move {
+
+    100% { 
+        -webkit-transform: translateX(-200px);
+        -moz-transform: translateX(-200px);
+        transform: translateX(-200px);
+    } 
+}
+
+@keyframes float-island {
+
+    100% { 
+        -webkit-transform: translateY(-30px);
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
     } 
 }
