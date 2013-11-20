@@ -1,3 +1,4 @@
+@import 'sass-bootstrap/lib/bootstrap';
 
 html,
 body
@@ -160,6 +161,36 @@ position: absolute;
 
       background: url('../images/robotin_1.png') no-repeat top left;
       background-size: 100px;
+    }
+  }
+  .escena02{
+    .modal-content{
+      left: -300px;
+      height: 650px;
+      width: 1200px;
+      overflow: hidden;
+      border: 10px solid white;
+      .tech-land{
+        border-radius: 6px;
+        height: 650px;
+        width: 1200px;
+        overflow: hidden;
+        .city{
+          height: 650px;
+          width: 100%;
+          background: url('../images/stage02/citi02.png') repeat-x top left;
+          position: absolute;
+          top: 0;
+        }
+        .sky-02{
+          height: 650px;
+          width: 120%;
+          background: url('../images/stage02/sky02.jpg') repeat-x top left;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
     }
   }
 }

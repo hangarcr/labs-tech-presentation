@@ -27,16 +27,31 @@
             <div class="island  floating-island"></div>
             <div class="floor "></div>
             
-            <div class="robotin move-jump-move">
-                <div class="robot1"></div>
+            <div class="robotin move-jump-move" >
+                <a href="#" data-toggle="modal" data-target="#myModal"><div class="robot1"></div></a>
+
             </div>
 
-
+            <div class="escena02">
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="tech-land">
+                            <div class="sky-02 moving-sky"></div>
+                            <div class="city"></div>
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+            </div>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
-        <script src="scripts/jquery-invertscroll.js"></script>
+        
+        <script src="bower_components/sass-bootstrap/js/transition.js"></script>
+        <script src="bower_components/sass-bootstrap/js/modal.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
