@@ -17,6 +17,25 @@
 }
 
 
+.floating-balloon02 {
+    -webkit-animation: float-balloon03 4s infinite alternate cubic-bezier(0.7, 0.09, 0.6, 0.95);
+    -moz-animation: float-balloon03 4s infinite alternate cubic-bezier(0.7, 0.09, 0.6, 0.95);
+    animation: float-balloon03 4s infinite alternate cubic-bezier(0.7, 0.09, 0.6, 0.95) 
+}
+
+.floating-balloon01 {
+    -webkit-animation: float-balloon03 5s infinite alternate cubic-bezier(0.355, 0.53, 0.015, 0.755);
+    -moz-animation: float-balloon03 5s infinite alternate cubic-bezier(0.355, 0.53, 0.015, 0.755);
+    animation: float-balloon03 5s infinite alternate cubic-bezier(0.355, 0.53, 0.015, 0.755) 
+}
+
+.floating-balloon03 {
+    -webkit-animation: float-balloon03 7s infinite alternate cubic-bezier(0.2, 0.63, 0.015, 0.55);
+    -moz-animation: float-balloon03 7s infinite alternate cubic-bezier(0.2, 0.63, 0.015, 0.55);
+    animation: float-balloon03 7s infinite alternate cubic-bezier(0.2, 0.63, 0.015, 0.55) 
+}
+
+
 @keyframes move-jump {
     0% { 
         -webkit-transform: translateX(-100px);
@@ -58,6 +77,18 @@
 @keyframes float-island {
 
     100% { 
+        -webkit-transform: translateY(-30px);
+        -moz-transform: translateY(-30px);
+        transform: translateY(-30px);
+    } 
+}
+
+@keyframes float-balloon03 {
+
+    100% { 
+        -webkit-transform: translateX(-90px);
+        -moz-transform: translateX(-90px);
+        transform: translateX(-90px);
         -webkit-transform: translateY(-30px);
         -moz-transform: translateY(-30px);
         transform: translateY(-30px);
