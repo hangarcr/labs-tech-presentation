@@ -17,41 +17,36 @@
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
     </head>
-    <body class="stage02">
+    <body class="stage03">
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-            <div class="sky moving-sky"></div>
-            <div class="island  floating-island"></div>
-            <div class="floor "></div>
-            <div class="robotin move-jump-move" ><a href="#" data-toggle="modal" data-target="#myModal"><div class="robot1"></div></a></div>
-
-            <div class="escena02">
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                  <div class="modal-dialog">
-                    <div class="modal-content">
-                      <div class="tech-land">
-                            <div class="sky-02 moving-sky"></div>
-                            <div class="city"></div>
-                            <h1>Tecnolandia</h1>
-                      </div>
-                    </div><!-- /.modal-content -->
-                  </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
+            <div class="sky scroll">
+                <div class="sun scroll"></div>
+                <div class="clouds page"></div>
             </div>
+
+            <div class="back-ground scroll"></div>
+            
+            <div class="second-ground scroll"></div>
+            
+            <div class="floor scroll"></div>
+            
+            <div class="robotin scroll ">
+                <div class="robot1 page"></div>
+            </div>
+
+
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
-        
-        <script src="bower_components/sass-bootstrap/js/transition.js"></script>
-        <script src="bower_components/sass-bootstrap/js/modal.js"></script>
+        <script src="scripts/jquery-invertscroll.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
-        
-        <!-- endbuild <script src="scripts/main.js"></script> -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
 
 </html>

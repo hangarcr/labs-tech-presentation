@@ -1,0 +1,64 @@
+.stage01{
+  .sky{
+    width: 3000px;
+    top: 0;
+    .clouds{
+      z-index: 2;
+      width: 1500px;
+      height: 250px;
+      position: absolute;
+      border: none;
+    }
+    .clouds{
+      background: url('../images/clouds.png') repeat-x top left;
+      left: 0;
+      width: 3000px;
+    }
+    .sun{
+      background: url('../images/sun.png') no-repeat top left;
+      left: 30%;
+      z-index: 2;
+      width: 1000px;
+      height: 280px;
+      position: fixed;
+      border: none;
+      top: 0;
+    }
+  }
+  .back-ground{
+    z-index: 400;
+    width: 3200px;
+    background: url('../images/second-ground.png') repeat-x bottom left;
+    bottom: 100px;
+    height: 363px;
+  }
+  .second-ground{
+    z-index: 500;
+    width: 3000px;
+    background: url('../images/mid-ground.png') repeat-x bottom left;
+    bottom: 100px;
+    height: 250px;
+  }
+  .floor{
+    z-index: 600;
+    width: 2500px;
+    background: url('../images/floor.png') repeat-x top left;
+    bottom: 0;
+    height: 250px;
+  }
+  .robotin{
+    width: 3200px;
+    bottom: 400px;
+    z-index: 650;
+
+    .robot1{
+      width: 450px;
+      height: 550px;
+      position: absolute;
+      left: 1800px;
+      border: none;
+
+      background: url('../images/robotin_1.png') no-repeat top left;
+    }
+  }
+}
