@@ -7,13 +7,14 @@ body
   padding: 0;
   margin: 0;
   font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  background: rgb(220,160,40);
+  
 }
 
 /* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
 body
 {
-  overflow-x: hidden;
-  background: rgb(220,160,40);
 }
 
 h1
