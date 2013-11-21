@@ -17,11 +17,8 @@ html {
         -webkit-perspective: 800;
         -webkit-perspective-origin: 50% 50%;
 
-        background-image: -webkit-linear-gradient(hsla(0, 0%, 13%, 1) 0%,hsla(0, 0%, 16%, 0.71) 50%,hsl(0, 0%, 34%) 50%, hsl(0, 0%, 15%) 100%);
-        background-image: -moz-linear-gradient(hsla(0, 0%, 13%, 1) 0%,hsla(0, 0%, 16%, 0.71) 50%,hsl(0, 0%, 34%) 50%, hsl(0, 0%, 15%) 100%);
-        background-image: -o-linear-gradient(hsla(0, 0%, 13%, 1) 0%,hsla(0, 0%, 16%, 0.71) 50%,hsl(0, 0%, 34%) 50%, hsl(0, 0%, 15%) 100%);
-        background-image: -ms-linear-gradient(hsla(0, 0%, 13%, 1) 0%,hsla(0, 0%, 16%, 0.71) 50%,hsl(0, 0%, 34%) 50%, hsl(0, 0%, 15%) 100%);
-        background-image: linear-gradient(hsla(0, 0%, 13%, 1) 0%,hsla(0, 0%, 16%, 0.71) 50%,hsl(0, 0%, 34%) 50%, hsl(0, 0%, 15%) 100%);
+        background: url(http://www.montorg.hu/IMAGES/Technologiak/ULO-technologia/ULO_1.JPG) no-repeat;
+        background-position: 80% 50%;
         height: 100%;
 }
 
