@@ -146,26 +146,28 @@
         top:15%;
         @include animation-duration(6900ms);
     }
-}
+
+/********ANIMATIONS*********/
+
+
+
+}/*END*/
 
 
 .animType1 {
   -moz-animation-name: animType1-transform-keyframes;
-//  -moz-animation-duration: 5000ms;
   -moz-animation-delay: 0ms;
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
   -moz-transform-origin: 0 0;
   -o-animation-name: animType1-transform-keyframes;
-//  -o-animation-duration: 5000ms;
   -o-animation-delay: 0ms;
   -o-animation-fill-mode: forwards;
   -o-animation-timing-function: linear;
   -o-animation-iteration-count: 1;
   -o-transform-origin: 0 0;
   -webkit-animation-name: animType1-transform-keyframes;
-//  -webkit-animation-duration: 5000ms;
   -webkit-animation-delay: 0ms;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
@@ -175,16 +177,19 @@
 @-moz-keyframes animType1-transform-keyframes {
   0% {-moz-transform:translate(0px, 0px) rotateX(10deg) rotateY(30deg) rotateZ(80deg) translate(-50%, -50%);-moz-animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
   40% {-moz-transform:translate(-109px, 239px) rotateX(70deg) rotateY(30deg) rotateZ(-77deg) translate(-50%, -50%);-moz-animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+98% {opacity:1;}
   100% {-moz-transform:translate(0px, 500px) rotateX(0deg) rotateY(0deg) rotateZ(30deg) translate(-50%, -50%);left:45%;opacity:0.3;}
 }
 @-o-keyframes animType1-transform-keyframes {
   0% {-o-transform:translate(0px, 0px) rotateX(10deg) rotateY(30deg) rotateZ(80deg) translate(-50%, -50%);-o-animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
   40% {-o-transform:translate(-109px, 239px) rotateX(70deg) rotateY(30deg) rotateZ(-77deg) translate(-50%, -50%);-o-animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+98% {opacity:1;}
   100% {-o-transform:translate(0px, 500px) rotateX(0deg) rotateY(0deg) rotateZ(30deg) translate(-50%, -50%);left:45%;opacity:0.3;}
 }
 @-webkit-keyframes animType1-transform-keyframes {
   0% {-webkit-transform:translate(0px, 0px) rotateX(10deg) rotateY(30deg) rotateZ(80deg) translate(-50%, -50%);-webkit-animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
   40% {-webkit-transform:translate(-109px, 239px) rotateX(70deg) rotateY(30deg) rotateZ(-77deg) translate(-50%, -50%);-webkit-animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+98% {opacity:1;}
   100% {-webkit-transform:translate(0px, 500px) rotateX(0deg) rotateY(0deg) rotateZ(30deg) translate(-50%, -50%);left:45%;opacity:0.3;}
 }
 
@@ -192,21 +197,18 @@
 
 .animType2 {
   -moz-animation-name: animType2-transform-keyframes;
-//  -moz-animation-duration: 7000ms;
   -moz-animation-delay: 0ms;
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
   -moz-transform-origin: 0 0;
   -o-animation-name: animType2-transform-keyframes;
-//  -o-animation-duration: 7000ms;
   -o-animation-delay: 0ms;
   -o-animation-fill-mode: forwards;
   -o-animation-timing-function: linear;
   -o-animation-iteration-count: 1;
   -o-transform-origin: 0 0;
   -webkit-animation-name: animType2-transform-keyframes;
-//  -webkit-animation-duration: 7000ms;
   -webkit-animation-delay: 0ms;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
@@ -237,21 +239,18 @@ left:50%;opacity:0.3;}
 
 .animType3 {
   -moz-animation-name: animType3-transform-keyframes;
-//  -moz-animation-duration: 4000ms;
   -moz-animation-delay: 0ms;
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
   -moz-transform-origin: 0 0;
   -o-animation-name: animType3-transform-keyframes;
-//  -o-animation-duration: 4000ms;
   -o-animation-delay: 0ms;
   -o-animation-fill-mode: forwards;
   -o-animation-timing-function: linear;
   -o-animation-iteration-count: 1;
   -o-transform-origin: 0 0;
   -webkit-animation-name: animType3-transform-keyframes;
-//  -webkit-animation-duration: 4000ms;
   -webkit-animation-delay: 0ms;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
@@ -281,21 +280,18 @@ left:50%;opacity:0.3;}
 
 .animType4 {
   -moz-animation-name: animType4-transform-keyframes;
-//  -moz-animation-duration: 6750ms;
   -moz-animation-delay: 0ms;
   -moz-animation-fill-mode: forwards;
   -moz-animation-timing-function: linear;
   -moz-animation-iteration-count: 1;
   -moz-transform-origin: 0 0;
   -o-animation-name: animType4-transform-keyframes;
-//  -o-animation-duration: 6750ms;
   -o-animation-delay: 0ms;
   -o-animation-fill-mode: forwards;
   -o-animation-timing-function: linear;
   -o-animation-iteration-count: 1;
   -o-transform-origin: 0 0;
   -webkit-animation-name: animType4-transform-keyframes;
-//  -webkit-animation-duration: 6750ms;
   -webkit-animation-delay: 0ms;
   -webkit-animation-fill-mode: forwards;
   -webkit-animation-timing-function: linear;
