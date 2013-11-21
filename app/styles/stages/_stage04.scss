@@ -1,11 +1,16 @@
 //***************************************
-//************** STAGE 03 ***************
+//************** STAGE 04 ***************
 .stage04{
   .fabrica,
   .banda,
   .robotin{
     position: fixed;
     bottom: 0;
+    left: 0;
+  }
+  .scroll{
+    position: fixed;
+    bottom:0;
     left: 0;
   }
   .fabrica{
@@ -17,7 +22,7 @@
   .banda{
     z-index: 600;
     width: 150%;
-    background: url('../images/stage04/banda.png') repeat-x left;
+    background: url('../images/stage04/banda.png') repeat-x center left;
     bottom: 0;
     height: 120px;
     background-size: 70% auto;
