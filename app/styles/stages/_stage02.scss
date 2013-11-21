@@ -23,7 +23,7 @@
       height: 250px;
       width: 80%;
       background: url('../images/stage02/balloons01.png') no-repeat top left;
-      position: absolute;
+      position: fixed;
       top: 66%;
       left: 70%;
     }
@@ -31,7 +31,7 @@
       height: 250px;
       width: 80%;
       background: url('../images/stage02/balloons02.png') no-repeat top left;
-      position: absolute;
+      position: fixed;
       top: 50%;
       left: 80%;
     }
@@ -39,7 +39,7 @@
       height: 250px;
       width: 80%;
       background: url('../images/stage02/balloons03.png') no-repeat top left;
-      position: absolute;
+      position: fixed;
       top: 38%;
       right: -37%;
     }
@@ -47,7 +47,7 @@
   .floor{
     z-index: 600;
     width: 100%;
-    background: url('../images/stage02/grass.png') repeat-x top left;
+    background: url('../images/stage02/grass.png') repeat-x bottom left;
     bottom: 0;
     height: 120px;
     background-size: 100% auto;
@@ -67,7 +67,7 @@
     height: 516px;
     left: 5%;
     width: 410px;
-    position: absolute;
+    position: fixed;
   }
   .robotin{
     width: 300px;
@@ -78,11 +78,11 @@
     .robot1{
       width: 450px;
       height: 120px;
-      position: absolute;
+      position: fixed;
       left: 0;
       border: none;
-      bottom: 0;
-      background: url('../images/robotin_1.png') no-repeat top left;
+      bottom: 50px;
+      background: url('../images/robotin_1.png') no-repeat bottom left;
       background-size: 100px;
     }
   }
@@ -92,7 +92,7 @@
   .perro{
     width: 450px;
     height: 100px;
-    position: absolute;
+    position: fixed;
     border: none;
     bottom: 0;
     z-index: 600;
