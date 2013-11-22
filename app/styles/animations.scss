@@ -36,6 +36,30 @@
 }
 
 
+.baile {
+  animation-name: baile-transform-keyframes;
+  animation-duration: 3000ms;
+  animation-delay: 0ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin: 0 0;
+}
+@keyframes baile-transform-keyframes {
+    0% {
+        transform:translate(0px, 140px) rotateY(190deg) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25,.25,.75,.75);
+    }
+    50% {
+        transform:translate(-200px, 140px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+        animation-timing-function: cubic-bezier(.25,.25,.75,.75);
+    }
+    100% {
+        transform:translate(0px, 140px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+    }
+}
+
+
 @keyframes move-jump {
     0% { 
         -webkit-transform: translateX(-100px);
