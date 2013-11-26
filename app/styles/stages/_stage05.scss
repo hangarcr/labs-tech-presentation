@@ -1,0 +1,230 @@
+//***************************************
+//************** STAGE 05 ***************
+
+body {
+	overflow-x: hidden;
+	background: #000;
+	min-height: 600px;
+}
+
+
+@-webkit-keyframes moveLayer {
+	0% { left: 0px; }
+	100% { left: -1240px; }
+}
+
+/*
+@-webkit-keyframes walkCycle {
+	0% {
+		left: 6px;
+	}
+	33% {
+		left: -70px;
+	}
+	66% {
+		left: -134px;
+	}
+	100% {
+		left: -198px;
+	}
+}
+*/
+
+@-webkit-keyframes walkCycle {
+	0% {
+		left: 0px;
+	}
+	16.6% {
+		left: -160px;
+	}
+	33.2% {
+		left: -320px;
+	}
+	49.8% {
+		left: -480px;
+	}
+	66.4% {
+		left: -640px;
+	}
+	83% {
+		left: -800px;
+	}
+	100% {
+		left: -960px;
+	}
+}
+
+@-webkit-keyframes moveRight {
+	0% {
+		left: -50px;
+	}
+
+	100% {
+		left: 1400px;
+	}
+}
+
+@-webkit-keyframes numberFade {
+	0% {
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+.wrapper {
+	position: absolute;
+	top: 50%;
+	width: 1400px;
+	height: 588px;
+	margin-top: -300px;
+	overflow: hidden;
+}
+
+.background1{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 3100px;
+	height: 600px;
+	background-image: url('../images/stage05/background1.png');
+	background-repeat: repeat;
+	
+	-webkit-animation-name: moveLayer;
+	-webkit-animation-duration: 28s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.background2{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 3100px;
+	height: 600px;
+	
+	-webkit-animation-name: moveLayer;
+	-webkit-animation-duration: 27s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.foreground{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	pointer-events: none;
+	-webkit-animation-name: moveLayer;
+	-webkit-animation-duration: 14s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.floor{
+	position: absolute;
+	top: 400px;
+	left: 0;
+	width: 3100px;
+	height: 220px;
+	-webkit-transform: translate3d(0, 0, 0);
+	background-image: url('../images/stage05/floor.png');
+	background-repeat: repeat;
+}
+
+
+//Characters
+
+.robot{
+	position: absolute;
+	left: -100px;
+	top: 285px;
+	z-index: 100;
+	width: 100px;
+	height: 114px;
+	overflow: hidden;
+	-webkit-transform: translate3d(0, 0, 0);
+	
+	-webkit-animation-name: moveRight;
+	-webkit-animation-duration: 30s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	.sprite{
+		position: absolute;
+		left: 4px;
+		-webkit-animation-name: walkCycle;
+		-webkit-animation-duration: 2s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-timing-function: step-start;
+		width: 1056px;
+		height: 114px;
+		background-image: url('../images/stage05/robot02.png');
+		background-position: 0 0;
+		background-size: 100% auto;
+	}
+}
+
+.number{
+	color: white;
+	font-size: 50px;
+	font-family: Helvetica;
+	opacity: 0;
+/* 	display: none; */
+	width: 450px;
+	
+	position: absolute;
+	z-index: 100;
+	left: 0;
+	top: 0;
+	-webkit-animation-name: numberFade;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+	-webkit-animation-timing-function: linear;
+	&.number1{
+		-webkit-animation-delay: 4s;
+		left: 590px;
+		top: 170px;
+	}
+	&.number2{
+		-webkit-animation-delay: 7s;
+		left: 900px;
+		top: 70px;
+	}
+	&.number3{
+		-webkit-animation-delay: 10s;
+		left: 1240px;
+		top: 180px;
+	}
+	&.number4{
+		-webkit-animation-delay: 13s;
+		left: 980px;
+		top: 40px;
+	}
+	&.number5{
+		-webkit-animation-delay: 16s;
+		left: 1600px;
+		top: 110px;
+	}
+	&.number6{
+		-webkit-animation-delay: 19s;
+		left: 1340px;
+		top: 140px;
+	}
+	&.number7{
+		-webkit-animation-delay: 22s;
+		left: 1780px;
+		top: 200px;
+	}
+	&.number8{
+		-webkit-animation-delay: 25s;
+		left: 2040px;
+		top: 70px;
+		font-size: 70px;
+	}
+}
