@@ -31,27 +31,31 @@ body {
 */
 
 @-webkit-keyframes walkCycle {
-	0% {
-		left: 0px;
-	}
-	16.6% {
-		left: -160px;
-	}
-	33.2% {
-		left: -320px;
-	}
-	49.8% {
-		left: -480px;
-	}
-	66.4% {
-		left: -640px;
-	}
-	83% {
-		left: -800px;
-	}
-	100% {
-		left: -960px;
-	}
+	0% {left: 0px;}
+	16% {left: -160px;}
+	28% {left: -320px;}
+	40% {left: -480px;}
+	55% {left: -640px;}
+	75% {left: -800px;}
+	85% {left: -960px;}
+	100% {left: -1120px;}
+}
+@-webkit-keyframes openMouthCycle {
+	0% {left: 960px;}
+	16% {left: -1120px;}
+	28% {left: -1440px;}
+	45% {left: -1600px;}
+	85% {left: -1760px;}
+	100% {left: -1120px;}
+}
+@-webkit-keyframes fallingCycle {
+	0% {left: 0;}
+	12.5% {left: -1920px;}
+	25% {left: -2080px;}
+	37.5% {left: -2240px;}
+	45% {left: -2400px;}
+	57.5% {left: -2560px;}
+	100% {left: -2720px;}
 }
 
 @-webkit-keyframes moveRight {
@@ -60,7 +64,7 @@ body {
 	}
 
 	100% {
-		left: 1400px;
+		left: 1440px;
 	}
 }
 
@@ -79,7 +83,7 @@ body {
 .wrapper {
 	position: absolute;
 	top: 50%;
-	width: 1400px;
+	width: 1440px;
 	height: 588px;
 	margin-top: -300px;
 	overflow: hidden;
@@ -141,27 +145,22 @@ body {
 
 .robot{
 	position: absolute;
-	left: -100px;
+	left: -110px;
 	top: 285px;
 	z-index: 100;
-	width: 100px;
+	width: 135px;
 	height: 114px;
 	overflow: hidden;
 	-webkit-transform: translate3d(0, 0, 0);
-	
 	-webkit-animation-name: moveRight;
-	-webkit-animation-duration: 30s;
-	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-duration: 28s;
+	-webkit-animation-iteration-count: 1;
 	-webkit-animation-timing-function: linear;
 	.sprite{
 		position: absolute;
-		left: 4px;
-		-webkit-animation-name: walkCycle;
-		-webkit-animation-duration: 2s;
-		-webkit-animation-iteration-count: infinite;
-		-webkit-animation-timing-function: linear;
-		-webkit-animation-timing-function: step-start;
-		width: 1056px;
+		left: -2720px;
+		-webkit-animation: walkCycle 2s step-start 0 5, openMouthCycle 2s step-start 10s 4, fallingCycle 6s step-start 18s 1;
+		width: 2880px;
 		height: 114px;
 		background-image: url('../images/stage05/robot02.png');
 		background-position: 0 0;
@@ -223,7 +222,7 @@ body {
 	}
 	&.number8{
 		-webkit-animation-delay: 25s;
-		left: 2040px;
+		left: 1840px;
 		top: 70px;
 		font-size: 70px;
 	}
