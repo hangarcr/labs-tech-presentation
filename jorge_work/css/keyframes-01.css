@@ -1,0 +1,76 @@
+@-webkit-keyframes captionFades {
+    0% { opacity: 1 }
+    70% { opacity: 1 }
+    100% { opacity: 0 }
+}
+@-webkit-keyframes stop-1{
+    0% { left: 49%; top: 78%;  }
+    100% { left: 49%; top: 78%;  }
+}
+@-webkit-keyframes hold{
+    0% { top: -15%;  }
+    100% { top: -15%;  }
+}
+@-webkit-keyframes fall { 
+    0% { top: -15%; }
+    80% { top: 75%;}
+}
+@-webkit-keyframes walk-1 { 
+    0% { left: 10%; }
+    100% { left: 15%;}
+}
+@-webkit-keyframes walk-2 { 
+    0% { left: 15%; }
+    20% { top: 76.5%;  }
+    100% { left: 37%; top: 75.5%;}
+}
+@-webkit-keyframes walk-3 { 
+    0% { left: 37%; }
+    50% {  top: 78%;}
+    100% { left: 49%;  top: 78%;}
+}
+@-webkit-keyframes walk-4 { 
+    0% { left: 49%; top: 78%; }
+    100% { left: 72.5%;  top: 77.5%;}
+}
+@-webkit-keyframes walk-5 { 
+    0% { left: 72.5%; top: 77.5%; }
+    80% { top: 74%; }
+    100% { left: 80%;  top: 74%;}
+}
+@-webkit-keyframes leave { 
+    0% { left: 80%; top: 74%; }
+    100% { left: 115%;  top: 74%;}
+}
+@-webkit-keyframes rotateDown-1 {
+    10% {   -webkit-transform: rotate(15deg); }
+    90% {   -webkit-transform: rotate(15deg); }
+}
+@-webkit-keyframes rotateDown-2 {
+    10% {   -webkit-transform: rotate(15deg); }
+    90% {   -webkit-transform: rotate(15deg); }
+}
+@-webkit-keyframes rotateUp {
+    10% { -webkit-transform: rotate(-15deg); }
+    90% { -webkit-transform: rotate(-15deg); }
+}
+@-webkit-keyframes spin { 
+    10% { -webkit-transform: rotateY(180deg); }
+    90% { -webkit-transform: rotateY(180deg); }
+}
+@-webkit-keyframes wondering { 
+    0% { left: 49%;  top: 78%; }
+    10% { -webkit-transform: rotateY(180deg); }
+    90% { -webkit-transform: rotateY(180deg); }
+    100% { left: 49%;  top: 78%; }
+}
+@-webkit-keyframes bounce { 
+    0% { top: 75%; }
+    50% { top: 60%; }
+    100% { top: 75%; -webkit-transform: rotate(360deg); }
+}
+@-webkit-keyframes reassemble { 
+    0% { background-position: 100% 100%; }
+    3% { background-position: 0% 100%; }
+    100% { background-position: 0% 100%; }
+}

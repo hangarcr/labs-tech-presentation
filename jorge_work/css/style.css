@@ -1,0 +1,443 @@
+body, p, h1, h2, h3, h4, h5, h6, ul, ol, li {
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 100%;
+	background: #000;
+	overflow: hidden;
+}
+
+/* --------------- */
+
+.captionStage {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+    opacity: 0;
+    background: #000;
+    -webkit-animation:
+        captionFades 5s linear 1;
+}
+
+.captionStage > div {
+    padding-top: 10em;
+}
+
+h2 {
+    font-size: 5em;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+h2,h3 {
+    width: 100%;
+    color: #eee;
+    text-align: center;
+}
+
+#stage-01 {
+    background: url(../img/nowhere.jpg) 0 -200px no-repeat ;   
+    -webkit-background-size: cover;    
+}
+
+#stage-02 {
+    background: url(../img/arrival.jpg) 0 -135px no-repeat ;
+    -webkit-background-size: cover; 
+}
+
+#stage-03 {
+    background: url(../img/Techland.jpg) 0 -200px no-repeat ;
+    -webkit-background-size: cover; 
+}
+
+#stage-03::after {
+	content: url(../img/techland-building.png) 0 -200px no-repeat ;
+    position: absolute;
+    bottom: 110px;
+    left: -205px;
+    z-index: 2;
+}
+
+#stage-04 {
+    background: url(../img/inside-tech.jpg) 0 -535px no-repeat ;
+    -webkit-background-size: cover; 
+}
+
+.background {    
+    position: absolute;
+    width: 1300px;
+    height: 600px;    
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    overflow: hidden;
+    margin-right: auto;
+}
+
+.otherBackground {
+    -webkit-animation: appearOtherBackground 8s 36s;
+}
+
+.otherBackground h2 {
+    position: absolute;
+    bottom: 30%;
+    opacity: 0;
+    background: rgba(0,0,0,0.6);
+    -webkit-animation: appearOtherBackgroundCaption 3s 36s;
+}
+
+#damaged-robot {
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    height: 4em;
+    width: 47px;
+    overflow: hidden;
+    -webkit-background-size: 100% 100%;    
+    -webkit-transform: scale(1);
+}
+
+#stage-01 #damaged-robot {
+    background: url(../img/landing2.png) no-repeat 100% 100%;
+    -webkit-animation: 
+        hold linear 6s,
+        fall linear 2s 6s,
+        bounce ease 1s 7.5s,
+        reassemble 60s steps(6) 9s,
+        spin linear 3s 12s,
+        walk-1 linear 2s 16s,
+        rotateDown-1 linear 2s 18s,
+        walk-2 linear 8s 18s,
+        rotateDown-2 linear 2s 26s,
+        walk-3 linear 5s 26s,
+        stop-1 linear 3s 31s,
+        wondering linear 5s 34s,
+        walk-4 linear 8s 39s,
+        rotateUp linear 4s 47s,
+        walk-5 linear 5s 47s,
+        leave linear 10s 52s
+}
+
+#stage-02 #damaged-robot {
+    background: url(../img/test.png) no-repeat;
+    top: 52%;
+    overflow: visible;
+    left: 0%;
+     -webkit-animation:
+        enter linear 10s 6s,
+        wait linear 5s 16s,
+        goDownStairs linear 2s 21s,
+        wait-2 linear 5s 23s,
+        goToRift linear 8s 28s,
+        wait-3 linear 10s 36s,
+        surprise linear 0.3s 44s,
+        wait-4 linear 2s 44.3s,
+        flip-1 linear 7s 46.3s,
+        goBack linear 7s 46.3s,
+        wait-5 linear 3s 53.3s,
+        run linear 1s 56.3s ,
+        spin linear 1s 57.3s
+}
+
+#stage-02 .otherBackground {
+    opacity: 0;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    height: 100%;
+    background: url(../img/techland-from-afar.jpg) 0 -60px no-repeat;
+    -webkit-background-size: cover;
+}
+
+#stage-02 #damaged-robot::after {
+    content: "!";
+    font-size: 5em;
+    position: absolute;
+    bottom: 82%;
+    left: 20%;
+    font-weight: bolder;
+    color: #121212;
+    opacity: 0;
+    -webkit-animation: alert linear 1s 44s
+
+}
+
+#stage-02::after {
+    content: url(../img/z-background.png) no-repeat;
+    position: absolute;
+    bottom: 0px;
+    left: -45px;
+    z-index: 2;
+}
+
+#stage-03 #damaged-robot {
+    background: url(../img/sprite.png) 0 0 no-repeat;
+    top: 72%;
+    overflow: visible;
+    left: 100%;
+    width: 57px;
+    -webkit-transform: scale(0.6);
+     -webkit-animation:
+        spin 1s 6s,
+        crash 5s 7s,
+        reassemble steps(5) 1s 12s,
+        wait linear 2s 13s,
+        look steps(3) 1s 15s,
+        admire linear 3s 16s,
+        look-2 steps(3) 1s 19s,
+        wait-2 linear 2s 20s,
+        enter linear 3s 22s;
+}
+
+#stage-04 #damaged-robot {
+	background: url(../img/test.png) no-repeat;
+	top: 87.5%;
+	overflow: visible;
+	left: -5%;
+	-webkit-transform: scale(2);
+	-webkit-animation:
+		appear linear 3s 6s,
+		wait-1 linear 1s 9s,
+		move-to-her linear 4s 10s,
+		wait-2 linear 10s 14s,
+		goBack linear 5s 24s,
+		recive linear 36s 29s;
+}
+
+#stage-04 #damaged-robot::after, #stage-04 #damaged-robot::before, #stage-04 #scientist::after {
+    content: "?";
+    font-size: 5em;
+    width: 50%;
+    position: absolute;
+    bottom: 82%;
+    left: 20%;
+    font-weight: bolder;
+    color: #eee;
+    opacity: 0;
+    text-align: center;
+    -webkit-animation: alert linear 1s 9.5s
+}
+
+#stage-04 #damaged-robot::before {
+	content: "!";
+	-webkit-animation: alert linear 1s 14.5s
+}
+
+#stage-04 #scientist {
+	background: url(../img/scientist.png) no-repeat;
+	-webkit-transform: scale(3.5);
+	width: 77px;
+	height: 85px;
+	position: absolute;
+	top: 74%;
+	left: 89%;
+	-webkit-animation: flip linear 19s 15.5s
+}
+
+#stage-04 #scientist::after {
+	-webkit-animation: alert linear 1s 14.5s
+}
+
+#stage-04 #reqs {
+	background: url(../img/reqs.png) no-repeat;
+	-webkit-transform: scale(2);
+	width: 280px;
+	height: 600px;
+	position: absolute;
+	top: -150%;
+	left: 31%;
+	-webkit-animation: 
+		fall linear 6s 30s
+}
+
+#stage-04 #asset {
+	background: url(../img/psd.png) 4px 0px no-repeat;
+	-webkit-transform: scale(2);
+	width: 35px;
+	height: 100%;
+	position: absolute;
+	top: 35%;
+	left: 36.5%;
+	-webkit-animation: 
+		asset-fall linear 3s 43s,
+		asset-spin linear 1s 46s infinite;
+}
+
+#stage-04 #reqs-mountain {
+	background: url(../img/pile-of-reqs.png) no-repeat;
+	-webkit-transform: scale(2);
+	width: 260px;
+	height: 260px;
+	position: absolute;
+	top: 92%;
+	left: 30%;
+	-webkit-animation: 
+		up linear 3s 32s,
+		reqs-wait-2 1s 35s infinite
+}
+
+#stage-04 #pipe {
+	background: url(../img/pipe.png) -6px 15px no-repeat;
+	-webkit-transform: scale(2);
+	width: 350px;
+	height: 150px;
+	position: absolute;
+	top: -36%;
+	left: 30%;
+	-webkit-animation: 
+		pipe-down linear 2s 28s,
+		pipe-wait linear 8s 30s,
+		pipe-up linear 2s 38s
+}
+
+#stage-04 #small-pipe {
+	background: url(../img/small-pipe.png) 110px 15px no-repeat;
+	-webkit-transform: scale(2);
+	width: 350px;
+	height: 150px;
+	position: absolute;
+	top: -36%;
+	left: 30%;
+	-webkit-animation: 
+		small-pipe-down linear 2s 41s,
+		small-pipe-wait linear 5s 43s,
+		small-pipe-up linear 2s 48s;
+}
+
+/* --- Clouds --- */
+
+#clouds {
+	position: relative;
+	top: 150px;
+	left: 30%;
+}
+
+.cloud {
+	width: 200px; height: 60px;
+	background: #fff;	
+	border-radius: 200px;
+	-moz-border-radius: 200px;
+	-webkit-border-radius: 200px;	
+	position: relative; 
+}
+
+.cloud:before, .cloud:after {
+	content: '';
+	position: absolute; 
+	background: #fff;
+	width: 100px; height: 80px;
+	position: absolute; top: -15px; left: 10px;	
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;	
+	-webkit-transform: rotate(30deg);
+	transform: rotate(30deg);
+	-moz-transform: rotate(30deg);
+}
+
+.cloud:after {
+	width: 120px; height: 120px;
+	top: -55px; left: auto; right: 15px;
+}
+
+.x1 {
+	-webkit-animation: moveclouds 45s linear infinite;
+	-moz-animation: moveclouds 45s linear infinite;
+	-o-animation: moveclouds 45s linear infinite;
+}
+
+.x2 {
+	left: 200px;	
+	-webkit-transform: scale(0.6);
+	-moz-transform: scale(0.6);
+	transform: scale(0.6);
+	opacity: 0.6; 
+	-webkit-animation: moveclouds 30s linear infinite;
+	-moz-animation: moveclouds 30s linear infinite;
+	-o-animation: moveclouds 30s linear infinite;
+}
+
+.x3 {
+	left: -250px; top: -200px;
+	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; 	
+	-webkit-animation: moveclouds 25s linear infinite;
+	-moz-animation: moveclouds 25s linear infinite;
+	-o-animation: moveclouds 25s linear infinite;
+}
+
+.x4 {
+	left: 470px; top: -250px;
+	
+	-webkit-transform: scale(0.75);
+	-moz-transform: scale(0.75);
+	transform: scale(0.75);
+	opacity: 0.75; 	
+	-webkit-animation: moveclouds 38s linear infinite;
+	-moz-animation: moveclouds 38s linear infinite;
+	-o-animation: moveclouds 38s linear infinite;
+}
+
+.x5 {
+	left: -150px; top: -150px;	
+	-webkit-transform: scale(0.8);
+	-moz-transform: scale(0.8);
+	transform: scale(0.8);
+	opacity: 0.8; 	
+	-webkit-animation: moveclouds 40s linear infinite;
+	-moz-animation: moveclouds 40s linear infinite;
+	-o-animation: moveclouds 40s linear infinite;
+}
+
+.x6 {
+	left: 600px; top: -250px;	
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	transform: scale(1);
+	opacity: 0.6; 	
+	-webkit-animation: moveclouds 42s linear infinite;
+	-moz-animation: moveclouds 42s linear infinite;
+	-o-animation: moveclouds 42s linear infinite;
+}
+
+@-webkit-keyframes moveclouds {
+    0% {margin-left: 100%;}
+    100% {margin-left: -100%;}
+}
+
+@-webkit-keyframes appearOtherBackground {
+    10% {opacity: 1;}
+    90% {opacity: 1;}
+}
+
+@-webkit-keyframes appearOtherBackgroundCaption {
+    0% {opacity: 1;}
+    80% {opacity: 1;}
+}
+
+@-webkit-keyframes captionFades {
+    0% { opacity: 1 }
+    70% { opacity: 1 }
+    100% { opacity: 0 }
+}
+
+@-webkit-keyframes alert {
+    0% { opacity: 1 }
+}

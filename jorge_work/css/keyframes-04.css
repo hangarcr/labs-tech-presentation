@@ -1,0 +1,90 @@
+@-webkit-keyframes appear {
+    0% { top: 87.5%; left: -5%;}
+    100% { top: 87.5%; left: 10%; }
+}
+@-webkit-keyframes wait-1 {
+    0% { top: 87.5%; left: 10%;}
+    100% { top: 87.5%; left: 10%; }
+}
+@-webkit-keyframes wait-2 {
+    0% {top: 87.5%; left: 65%;}
+    100% {top: 87.5%; left: 65%;}
+}
+@-webkit-keyframes recive {
+    0% {top: 87.5%; left: 40%;}
+    100% {top: 87.5%; left: 40%;}
+}
+@-webkit-keyframes move-to-her {
+    0% { top: 87.5%; left: 10%;}
+    100% { top: 87.5%; left: 65%; }
+}
+@-webkit-keyframes goBack {
+    0% { top: 87.5%; left: 65%;}
+    100% { top: 87.5%; left: 40%; }
+}
+@-webkit-keyframes fall {
+    0% { top: -150%;}
+    100% { top: 150%;}
+}
+@-webkit-keyframes asset-fall {
+    0% { background-color: rgba(235,235,235,0.2) ;}
+    100% { background-position: 4px 150px; background-color: rgba(235,235,235,0.2) ;}
+}
+@-webkit-keyframes up {
+    0% { top: 92%;}
+    100% { top: 45%;}
+}
+@-webkit-keyframes reqs-wait {
+    0% { top: 150%;}
+    100% { top: 150%;}
+}
+@-webkit-keyframes reqs-wait-2 {
+    0% { top: 45%;}
+    100% { top: 45%;}
+}
+@-webkit-keyframes flip {
+    0% { -webkit-transform: rotateY(180deg) scale(3.5);}
+    100% { -webkit-transform: rotateY(180deg) scale(3.5); }
+}
+@-webkit-keyframes pipe-down {
+    0% { top: -36%;}
+    100% { top: 0%;}
+}
+@-webkit-keyframes small-pipe-down {
+    0% { top: -36%;}
+    100% { top: -5%;}
+}
+@-webkit-keyframes pipe-wait {
+    0% { top: 0%;}
+    100% { top: 0%;}
+}
+@-webkit-keyframes small-pipe-wait {
+    0% { top: -5%;}
+    100% { top: -5%;}
+}
+@-webkit-keyframes pipe-up {
+    0% { top: 0%;}
+    100% { top: -36%;}
+}
+@-webkit-keyframes small-pipe-up {
+    0% { top: -5%;}
+    100% { top: -36%;}
+}
+@-webkit-keyframes asset-spin {
+    0% { 
+        background-color: transparent;
+        background-position: 4px 150px;
+        -webkit-transform: rotateY(0deg) scale(2);
+    }
+    50% {
+        -webkit-transform: rotateY(90deg) scale(2);
+    }
+    75 {
+        -webkit-transform: rotateY(180deg) scale(2);
+    }
+    100% {
+        background-color: transparent;
+        background-position: 4px 150px;
+        -webkit-transform: rotateY(0deg) scale(2); 
+    }
+}

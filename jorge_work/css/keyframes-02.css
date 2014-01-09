@@ -1,0 +1,57 @@
+@-webkit-keyframes enter {
+    0% { left: 0% }
+    100% { left: 48% }
+}
+@-webkit-keyframes wait {
+    0% { left: 48% }
+    100% { left: 48% }
+}
+@-webkit-keyframes wait-2 {
+    0% { left: 53%; top: 61.5%;}
+    100% { left: 53%; top: 61.5%;}
+}
+@-webkit-keyframes wait-3 {
+    0% { left: 78%; top: 61.5%;}
+    100% { left: 78%; top: 61.5%;}
+}
+@-webkit-keyframes wait-4 {
+    0% { left: 77%; top: 61.5%;}
+    100% { left: 77%; top: 61.5%;}
+}
+@-webkit-keyframes wait-5 {
+    0% { left: 53%; top: 61.5%; }
+    100% { left: 53%; top: 61.5%; }
+}
+@-webkit-keyframes goDownStairs {
+    0% { left: 48% }
+    100% { left: 53%; top: 61.5%;}
+}
+@-webkit-keyframes goToRift {
+    0% { left: 53%; top: 61.5%; }
+    100% { left: 78%; top: 61.5%; }
+}
+@-webkit-keyframes goBack {
+    0% { left: 78%; top: 61.5%; }
+    100% { left: 53%; top: 61.5%; }
+}
+@-webkit-keyframes flip-1 { 
+    0% { -webkit-transform: rotateY(180deg); }
+    100% { -webkit-transform: rotateY(180deg); }
+}
+@-webkit-keyframes flip-2 { 
+    0% { -webkit-transform: rotateY(180deg); }
+    100% { -webkit-transform: rotateY(180deg); }
+}
+@-webkit-keyframes run {
+    0% { left: 53%; top: 61.5%; }
+    100% { left: 79.5%; top: 61.5%; }
+}
+@-webkit-keyframes surprise {
+    0% { top: 61.5%; -webkit-transform: rotate(-15deg); left: 77%; }
+    100% {left: 77%; top: 61.5%;}
+}
+@-webkit-keyframes spin {
+    0% { left: 79.5%; top: 61.5%; }
+    90% { -webkit-transform: rotate(2000deg); }
+    100% { left: 130% }
+}
